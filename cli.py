@@ -2,19 +2,19 @@ import argparse
 import logica
 
 def agregar_producto(args):
-    logica.agregar_producto(args.nombre, args.precio, args.existencias)
+    logica.agregar_producto(args.nombre, args.precio, args.existencias) 
     print("Producto agregado con éxito.")
 
 def actualizar_existencias(args):
-    logica.actualizar_existencias(args.id, args.existencias)
+    logica.actualizar_existencias(args.id, args.existencias) 
     print("Existencias actualizadas.")
 
 def registrar_venta(args):
-    logica.registrar_venta(args.id, args.cantidad)
+    logica.registrar_venta(args.id, args.cantidad) 
     print("Venta registrada.")
 
 def generar_informe(args):
-    productos = logica.generar_informe()
+    productos = logica.generar_informe() 
     print("Informe de inventario:")
     for producto in productos:
         print(producto)
